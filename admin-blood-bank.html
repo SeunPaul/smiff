@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Blood Bank</title>
+  </head>
+  <body>
+    <!-- Dashboard Navigation Start-->
+    <div class="dashboard-navigation">
+      <div class="dashboard-navigation-background"></div>
+      <div class="dashboard-navigation-card">
+        <div class="logo-section">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <div class="navigation-section">
+          <ul>
+            <li class="active-nav-item">
+              <img src="images/dashboard-logo.png" />
+              <img src="images/dashboard-red-logo.png" />
+              <span>Dashboard</span>
+            </li>
+            <li>
+              <img src="images/donation-history-logo.png" />
+              <img src="images/dashboard-red-logo.png" />
+              <span>Donation History</span>
+            </li>
+            <li>
+              <img src="images/blood-bank-logo.png" />
+              <img src="images/dashboard-red-logo.png" />
+              <span>Donors</span>
+            </li>
+            <li>
+              <img src="images/patients-logo.png" />
+              <img src="images/dashboard-red-logo.png" />
+              <span>Receivers</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Dashboard Navigation End -->
+
+    <!-- Dashboard Start -->
+    <div class="dashboard">
+      <div class="dashboard-section-1">
+        <div class="dashboard-section-1-left">
+          <h3>Dashboard</h3>
+          <p>Welcome 👋, Nice to have you back!</p>
+        </div>
+        <div class="dashboard-section-1-right">
+          <button class="btn-dark">
+            <img src="images/blood-bank-white-logo.png" />
+            <p>Add new donor</p>
+          </button>
+          <button class="btn-light">
+            <img src="images/patients-red-logo.png" />
+            <p>Add new patient</p>
+          </button>
+        </div>
+      </div>
+      <div class="dashboard-section-2">
+        <div class="grid-child grid-child-1 grid-child-dark">
+          <p>Volume of blood collected (In paints)</p>
+          <h3>123,456.78</h3>
+          <p><b>+ 33.5%</b> in the last month</p>
+        </div>
+        <div class="grid-child grid-child-2 grid-child-light">
+          <p>Volume of blood available (In paints)</p>
+          <h3>1234</h3>
+          <p><b>- 20%</b> in the last month</p>
+        </div>
+        <div class="grid-child grid-child-3 grid-child-light">
+          <p>Total Donors</p>
+          <h3>1234</h3>
+          <p><b>+ 20%</b> in the last month</p>
+        </div>
+        <div class="grid-child grid-child-4 grid-child-light">
+          <p>Total Patients</p>
+          <h3>5678</h3>
+          <p><b>- 8.67%</b> in the last month</p>
+        </div>
+      </div>
+      <div class="dashboard-section-3">
+        <canvas id="donationAnalytics"></canvas>
+      </div>
+      <div class="dashboard-section-4">
+        <div>
+          <p>Donation History</p>
+          <a>see all</a>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Donor</th>
+              <th>Recipient</th>
+              <th>Volume (In pants)</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Atanda Damilare</td>
+              <td>Agboola Fuhad</td>
+              <td>4</td>
+              <td>Oct 1, 2022</td>
+              <td><button>View</button></td>
+            </tr>
+            <tr>
+              <td>Atanda Damilare</td>
+              <td>Oluwafemi Seun Paul</td>
+              <td>4</td>
+              <td>Oct 1, 2022</td>
+              <td><button>View</button></td>
+            </tr>
+            <tr>
+              <td>Atanda Damilare</td>
+              <td>Oni Temidayo</td>
+              <td>4</td>
+              <td>Oct 1, 2022</td>
+              <td><button>View</button></td>
+            </tr>
+            <tr>
+              <td>Atanda Damilare</td>
+              <td>Agboola Fuhad</td>
+              <td>4</td>
+              <td>Oct 1, 2022</td>
+              <td><button>View</button></td>
+            </tr>
+            <tr>
+              <td>Atanda Damilare</td>
+              <td>Oluwafemi Seun Paul</td>
+              <td>4</td>
+              <td>Oct 1, 2022</td>
+              <td><button>View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Dashboard End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/admin-dashboard.js"></script>
+  </body>
+</html>
