@@ -21,6 +21,86 @@ body {
   margin: 0;
 }
 
+/* register form start */
+.register-page {
+  display: flex;
+  background-color: #fff;
+}
+
+.register-page .register-left {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.register-left .sand-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.register-left .logo {
+  height: 150px;
+  margin-top: 50px;
+}
+
+.register-left .register-illustration {
+  position: absolute;
+  bottom: 0;
+  height: 420px;
+}
+
+.register-left .register-image {
+  position: absolute;
+  height: 400px;
+  bottom: 0;
+}
+
+.register-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-right form {
+  width: 400px;
+}
+
+.register-right form h3 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.register-right form input,
+.register-right form select {
+  height: 40px;
+  width: 400px;
+  padding: 0 10px;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  margin-top: 3px;
+}
+
+.register-right form button {
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  width: 400px;
+  margin-top: 40px;
+  background-color: var(--red);
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* register form end */
+
 /* Dashboard Navigation Start */
 .dashboard-navigation-background {
   position: fixed;
@@ -71,11 +151,20 @@ body {
 
 .dashboard-navigation-card .navigation-section li {
   list-style: none;
-  display: flex;
-  align-items: center;
   padding: 10px;
   margin: 20px 0;
   cursor: pointer;
+}
+
+.dashboard-navigation-card .navigation-section li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.dashboard-navigation-card .navigation-section li a:active {
+  color: #000;
 }
 
 .dashboard-navigation-card .navigation-section li.active-nav-item,
@@ -111,17 +200,20 @@ body {
 /* Dashboard Start */
 .dashboard {
   margin-left: 240px;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .dashboard-section-1 {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
 }
 
 .dashboard-section-1-right {
   display: flex;
+}
+
+.dashboard-section-1-right a {
+  text-decoration: none;
 }
 
 .dashboard-section-1-right button {
@@ -170,6 +262,7 @@ body {
   position: relative;
   border-radius: 12px;
   padding: 10px 20px;
+  overflow: hidden;
 }
 
 .dashboard-section-2 .grid-child p {
@@ -180,6 +273,7 @@ body {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  position: absolute;
 }
 
 .dashboard-section-2 .grid-child-dark {
@@ -188,15 +282,15 @@ body {
 }
 
 .dashboard-section-2 .grid-child-dark .canv1 {
-  background-color: #fff;
-  right: 20px;
-  bottom: 0;
+  background-color: #ffffff80;
+  right: -10px;
+  bottom: -10px;
 }
 
 .dashboard-section-2 .grid-child-dark .canv2 {
-  background-color: #fff;
-  right: 0;
-  bottom: 0;
+  background-color: #ffffff80;
+  right: 20px;
+  bottom: -5px;
 }
 
 .dashboard-section-2 .grid-child-light {
@@ -208,15 +302,15 @@ body {
 }
 
 .dashboard-section-2 .grid-child-light .canv1 {
-  background-color: var(--transparent-red);
-  right: 0;
+  background-color: #88080880;
+  right: -13px;
   top: 0;
 }
 
 .dashboard-section-2 .grid-child-light .canv2 {
-  background-color: var(--transparent-red);
-  right: 0;
-  top: 20px;
+  background-color: #88080880;
+  right: -5px;
+  top: 30px;
 }
 
 .dashboard-section-2 .grid-child-1 {
@@ -233,6 +327,14 @@ body {
 
 .dashboard-section-2 .grid-child-4 {
   grid-area: 1 / 16 / span 5 / span 5;
+}
+
+.dashboard-section-2 .grid-child-5 {
+  grid-area: 6 / 1 / span 5 / span 5;
+}
+
+.dashboard-section-2 .grid-child-6 {
+  grid-area: 6 / 6 / span 5 / span 5;
 }
 
 .dashboard-section-3 {
@@ -309,6 +411,15 @@ body {
 .donation-history-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.donation-history-header h4 {
+  margin-top: 0;
+}
+
+.donation-history-header a {
+  color: var(--red);
 }
 
 .dashboard-section-4 table {
